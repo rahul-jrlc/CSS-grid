@@ -19,6 +19,7 @@ body {
 
 .container {
     display: grid;
+    height: 100vh;
     gap: 20px;
-    grid-template-columns: 100px 300px auto 200px;
+    grid-template-rows: 100px 300px auto 80px;
 }
