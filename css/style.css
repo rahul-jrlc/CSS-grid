@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 40px;
+    font-family: sans-serif;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.box-1, .box-2, .box-3 {
+    background: skyblue;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+}
