@@ -4,7 +4,7 @@
     box-sizing: border-box; /* BORDER-BOX ALLOWS US TO ADD PADDING AND BORDER TO THE ELEMENTS WITHOUT INCREASING THEIR SIZE */
     font-family: sans-serif;
     font-weight: 900;
-    font-size: 10px;
+    font-size: 40px;
     color: black;  
 }
 
@@ -16,4 +16,15 @@ p {
     font-size: 50px;
     border-bottom: 10px solid yellow;
     color: black;
+}
+
+.item {
+    background: yellow;
+    text-align: center;
+}
+
+.container {
+    display: grid;  /* ALL CHILDREN OF CONTAINER ARE CONSIDERED GRID ITEMS */
+    grid-template-columns: 200px 100px 100px auto; /* THREE COLUMNS, WIDTH 100PX EACH */
+    gap: 20px;
 }
