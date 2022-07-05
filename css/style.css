@@ -1,4 +1,3 @@
-/* CSS GRID STARTING SETUP */
 
 * {
     box-sizing: border-box; /* BORDER-BOX ALLOWS US TO ADD PADDING AND BORDER TO THE ELEMENTS WITHOUT INCREASING THEIR SIZE */
@@ -25,9 +24,10 @@ p {
 
 .container {
     display: grid;  /* ALL CHILDREN OF CONTAINER ARE CONSIDERED GRID ITEMS */
+    height: 600px;
     gap: 20px;
-    grid-template-columns: 400px 200px;
-    grid-auto-flow: row; /* DEFAULT */
-    grid-auto-flow: column; /* NEW GRID ITEMS TACKED ONTO COLUMN INSTEAD OF DEFAULT ROW*/
-    grid-auto-columns: 100px;
+    border: 10px solid yellow;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* FR- FRACTIONAL UNIT(FREE SPACE)-- PROPORTION OF REMAINING SPACE TAKEN UP BY ROWS OR COLUMNS */
+    grid-template-rows: 1fr 7fr 1fr 1fr;
+   
 }
