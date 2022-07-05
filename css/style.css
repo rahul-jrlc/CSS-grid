@@ -25,6 +25,8 @@ p {
 
 .container {
     display: grid;  /* ALL CHILDREN OF CONTAINER ARE CONSIDERED GRID ITEMS */
-    grid-template-columns: 100px 200px;
     gap: 20px;
+    grid-template-columns: 200px 400px; /* EXPLICITLY DEFINED WHAT THE COLUMNS WILL BE */
+    grid-template-rows: 50px 100px;
+    grid-auto-rows: 100px 500px;  /* SIZES ANY EXTRA IMPLICITLY CREATED ROWS*/
 }
