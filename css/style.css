@@ -25,28 +25,13 @@ p {
 .container {
     display: grid;  /* ALL CHILDREN OF CONTAINER ARE CONSIDERED GRID ITEMS */
     gap: 20px;
-    grid-template-columns: 1fr 500px 1fr;
-    grid-template-rows: 150px 150px 100px;
-    grid-template-areas: "sidebar-1 content sidebar-2" /*FOR EACH INDIVIDUAL ROW*/
-                         "sidebar-1 content sidebar-2"
-                         "footer    footer  footer";
-}
-
-.footer {
-    grid-area: footer;
-}
-
-.item1 {
-    grid-area: sidebar-1;
-}
-
-.item2 {
-    grid-area: content;
+    grid-template-areas: 
+        "pp pp pp pp br br br br"
+        "pp pp pp pp br br br br"
+        "pp pp pp pp br br br br"
+        "pp pp pp pp br br br br";
 }
 
 .item3 {
-    grid-area: sidebar-2;
+    grid-column: pp-start / br-end;
 }
-
-
-
