@@ -26,11 +26,15 @@ p {
     display: grid;  /* ALL CHILDREN OF CONTAINER ARE CONSIDERED GRID ITEMS */
     gap: 20px;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr)
 }
 
 .item9 {
-    background: blue; /* COLOR APPLIED TO INDIVIDUAL ITEM*/
-    /* width: 500px;  APPLIED TO ENTIRE COLUMN */
-    grid-column: span 10;
-    grid-row: span 2; 
+    /* grid-column: span 2; SHORTHAND FOR GRID-COLUMN-START AND END */
+    background: green;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-column: 2 / 5;
+    grid-column: 1 / -1;  /* START / END */
+    grid-row: 1 / span 1;
 }
