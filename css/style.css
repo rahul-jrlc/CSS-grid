@@ -2,40 +2,35 @@
 * {
     box-sizing: border-box; /* BORDER-BOX ALLOWS US TO ADD PADDING AND BORDER TO THE ELEMENTS WITHOUT INCREASING THEIR SIZE */
     font-family: sans-serif;
-    font-weight: 900;
-    font-size: 40px;
-    color: black;  
+    /* font-weight: 900; */
+    /* font-size: 20px; */
+    /* color: black;   */
 }
 
 body {
     background: linear-gradient(110deg, #f93d66, #6d47d9);
 }
 
-p {
-    font-size: 50px;
-    border-bottom: 10px solid yellow;
-    color: black;
-}
+/* p {
+    margin: 0 0 20px 0;
+} */
 
-.item {
-    background: yellow;
-    text-align: center;
+img {
+    width: 100%;
 }
-
-.container {
-    display: grid;  /* ALL CHILDREN OF CONTAINER ARE CONSIDERED GRID ITEMS */
+.albums {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
-    grid-template-columns: repeat(10, 1fr);
 }
 
-.logo {
-    grid-column: span 2;
-    order: 3;
-}
-
-.nav {
-    grid-column: span 8;
-}
-.content {
-    grid-column: 1 / -1;
+.album {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    color: white;
 }
